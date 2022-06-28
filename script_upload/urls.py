@@ -16,11 +16,14 @@ Including another URLconf
 from atexit import register
 from django.contrib import admin
 from django.urls import path
+from isort import file
 from formapp import views
+import formapp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', views.form_request),
     path('upload/', views.index),
     path('support/', views.uploadinfo),
+    #path('support/#', formapp/static/upload/)
 ]

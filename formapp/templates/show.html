@@ -25,6 +25,7 @@
             <th>Last Name</th>
             <th>Email</th>
             <th>File</th>
+            <th>Download Link</th>>
         </tr>
         <tr>
             {% for sh in show %}
@@ -32,7 +33,8 @@
             <td>{{sh.firstname}}</td>
             <td>{{sh.lastname}}</td>
             <td>{{sh.email}}</td>
-            <td>{{sh.file}}</td>
+            <td>{{sh.file}}</td>>
+            <td><a href="{{sh.file}}" download>Download File</a></td>
         </tr>
         {% endfor %}
     </table>
